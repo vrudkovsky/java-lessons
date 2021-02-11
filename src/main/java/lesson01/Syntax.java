@@ -1,3 +1,5 @@
+package lesson01;
+
 public class Syntax {
 
     public int inc(int k) {

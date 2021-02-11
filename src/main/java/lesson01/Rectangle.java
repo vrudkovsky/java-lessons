@@ -1,3 +1,5 @@
+package lesson01;
+
 public class Rectangle {
 
     public static void print(String s) {
