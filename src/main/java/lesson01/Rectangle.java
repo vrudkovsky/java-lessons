@@ -23,16 +23,16 @@ public class Rectangle {
 
     }
 
-
-    public static void main(String[] args) {
-        int W = 20;
-        int H = 15;
-
+    public static void drawEnvelope(int W, int H) {
         for (int i = 0; i < H; i++) {
             for (int j = 0; j < W; j++) {
                 print(isVisible(i, j, H, W) ? "*" : " ");
             }
             print("\n");
         }
+    }
+
+    public static void main(String[] args) {
+        drawEnvelope(20, 7);
     }
 }
