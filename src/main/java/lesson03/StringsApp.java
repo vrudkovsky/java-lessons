@@ -1,4 +1,4 @@
-package lessons03;
+package lesson03;
 
 
 import java.io.Closeable;
