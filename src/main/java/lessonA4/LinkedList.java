@@ -86,6 +86,19 @@ public class LinkedList {
     }
 
 
+    private Node reverse(Node curr, Node prev) {
+        Node savedNext = curr.next;
+        curr.next = prev;
+        if (savedNext == null) return curr;
+        return reverse(savedNext, curr);
+    }
+
+
+
+    public void  reverse() {
+        head = reverse(head, null);
+    }
+
 
 
     public String toString_itr() {
@@ -95,7 +108,6 @@ public class LinkedList {
             sj.add(curr.value.toString());
             curr = curr.next;
         }
-
         return sj.toString();
     }
 }
