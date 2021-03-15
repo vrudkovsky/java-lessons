@@ -25,6 +25,14 @@ public class CountingValleysApp {
         int r = countingValleys(8, "UDDDUDUU");
 
         System.out.println(r);
+        Integer a = 5;
+        Integer b = 4;
+        Integer c = 6;
+        Integer d = 5;
+        System.out.printf("a > b : %d\n", a.compareTo(b));
+        System.out.printf("a <  c : %d\n", b.compareTo(a));
+        System.out.printf("a = d : %d\n", a.compareTo(d));
+
     }
 
 }
